@@ -13,10 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex h-screen">
-        <main className="flex-1 overflow-auto">
-          {children}
-        </main>
+      <body>
+        <main>{children}</main>
       </body>
     </html>
   );
