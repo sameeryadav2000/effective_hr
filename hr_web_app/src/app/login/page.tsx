@@ -33,9 +33,9 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.SubmitEvent) => {
     e.preventDefault();
 
-    if (!validateForm()) {
-      return;
-    }
+    // if (!validateForm()) {
+    //   return;
+    // }
 
     setIsLoading(true);
 
@@ -46,7 +46,7 @@ export default function LoginPage() {
       setIsLoading(false);
 
       // Redirect to employee dashboard
-      router.push('/app');
+      router.push('/employeeApp');
     }, 1000);
   };
 
